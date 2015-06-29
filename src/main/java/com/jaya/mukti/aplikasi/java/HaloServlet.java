@@ -10,7 +10,7 @@ import java.util.date;
 import javax.servlet.annotation.WebServlet;
 
 
-@webservlet("/Halo")
+@webservlet("/halo")
 public class HaloServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req,HttpServletResponse res)
 						throws IOException,ServletException {
