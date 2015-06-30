@@ -79,13 +79,7 @@
                     <img class="img-responsive" src="${request.contextPath}/img/profile.png" alt="">
                     <div class="intro-text">
                         <span class="skills">Daftar Todo</span>
-						 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-					<table class="table table-striped tab-hover table-condense table-bordered">
+						 <table class="table table-condense table-hover table-bordered">
 						<thead>
 							<tr>
 								<th>&nbsp</th> 
@@ -102,6 +96,12 @@
 						</tbody>
 					</table>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
