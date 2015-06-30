@@ -83,25 +83,24 @@
                     </div>
                 </div>
             </div>
-			
         </div>
-		<table class="table table-striped tab-hover table-condense table-bordered">
-							<thead>
-								<tr>
-									<th>&nbsp</th> 
-									<th>Pekerjaan</th> 
-								</tr>
-							</thead>
-							<tbody>
-								<c:forEach var="t" items="${todo}">
-								<tr>
-									<td>${t.selesai}</td>
-									<td>${t.keterangan}</td>
-								</tr>
-								</c:forEach>
-							</tbody>
-						 </table>
     </header>
+					<table class="table table-striped tab-hover table-condense table-bordered">
+						<thead>
+							<tr>
+								<th>&nbsp</th> 
+								<th>Pekerjaan</th> 
+							</tr>
+						</thead>
+						<tbody>
+							<c:forEach var="t" items="${todo}">
+							<tr>
+								<td>${t.selesai}</td>
+								<td>${t.keterangan}</td>
+							</tr>
+								</c:forEach>
+						</tbody>
+					</table>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
