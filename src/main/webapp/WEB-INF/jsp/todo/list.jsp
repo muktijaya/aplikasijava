@@ -83,7 +83,9 @@
                     </div>
                 </div>
             </div>
-			<table class="table table-striped tab-hover table-condense table-bordered">
+			
+        </div>
+		<table class="table table-striped tab-hover table-condense table-bordered">
 							<thead>
 								<tr>
 									<th>&nbsp</th> 
@@ -99,7 +101,6 @@
 								</c:forEach>
 							</tbody>
 						 </table>
-        </div>
     </header>
 
     <!-- Portfolio Grid Section -->
