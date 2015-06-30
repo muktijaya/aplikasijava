@@ -79,7 +79,11 @@
                     <img class="img-responsive" src="${request.contextPath}/img/profile.png" alt="">
                     <div class="intro-text">
                         <span class="skills">Daftar Todo</span>
-						 <table class="table table-striped tab-hover table-condense table-bordered">
+						 
+                    </div>
+                </div>
+            </div>
+			<table class="table table-striped tab-hover table-condense table-bordered">
 							<thead>
 								<tr>
 									<th>&nbsp</th> 
@@ -95,9 +99,6 @@
 								</c:forEach>
 							</tbody>
 						 </table>
-                    </div>
-                </div>
-            </div>
         </div>
     </header>
 
