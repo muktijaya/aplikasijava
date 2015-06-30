@@ -16,7 +16,7 @@ public class todo {
 		return keterangan;
 	}
 	public void setketerangan(String keterangan){
-		this.id = id;
+		this.keterangan = keterangan;
 	}
 	
 	public Boolean getselesai(){
