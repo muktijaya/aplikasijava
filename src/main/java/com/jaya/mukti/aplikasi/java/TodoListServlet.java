@@ -44,7 +44,7 @@ public class TodoListServlet extends HttpServlet {
 		
 										
 		//redirect ke tampilan
-		String lokasijsp = "/WEB-INF/jsp/todo.jsp";
+		String lokasijsp = "/WEB-INF/jsp/todo/list.jsp";
 		RequestDispatcher rd = req.getRequestDispatcher(lokasijsp);
 		rd.forward(req, res);
 	}
