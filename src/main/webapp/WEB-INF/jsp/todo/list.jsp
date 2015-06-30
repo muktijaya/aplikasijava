@@ -1,4 +1,6 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -12,13 +14,13 @@
     <title>My First Application</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="${request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="${request.contextPath}/css/freelancer.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="${request.contextPath}/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -44,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">My First Application</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,7 +56,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="${request.contextPath}/#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
@@ -76,9 +78,27 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
-                        <span class="name">My First Application</span>
+                        <! -- <span class="name">My First Application</span>
                         <hr class="star-light">
-                        <span class="skills">Web Developer</span>
+                        <span class="skills">Web Developer</span> -->
+						
+						<h1>Daftar Todo</h1>
+						 <table>
+							<thead>
+								<tr>
+									<th> </th> 
+									<th>Pekerjaan</th> 
+								</tr>
+							</thead>
+							<tbody>
+								<c:forEach var="t" items="${todo}">
+								<tr>
+									<td>${t.selesai}</td>
+									<td>${t.keterangan}</td>
+								</tr>
+								</c:forEach>
+							</tbody>
+						 </table>
                     </div>
                 </div>
             </div>
